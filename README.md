@@ -15,13 +15,15 @@ notification feedback.
 ## Install
 
 ```sh
-npx expo install github:sethwebster/expo-haptics-advanced
+npm install github:sethwebster/expo-haptics-advanced#v0.1.0
+# or
+pnpm add github:sethwebster/expo-haptics-advanced#v0.1.0
 ```
 
 It includes native code: rebuild your app (`npx expo run:ios`, `npx expo run:android`, or an EAS build) after installing. It doesn't work in
 Expo Go.
 
-Requirements: Expo SDK 58, iOS 16.4.
+Built and tested with Expo SDK 58 (React Native 0.88). iOS 16.4 or later.
 
 ## Use
 

@@ -52,6 +52,7 @@
     "ios",
     "android/build.gradle",
     "android/src/main",
-    "expo-module.config.json"
+    "expo-module.config.json",
+    "CHANGELOG.md"
   ]
 }
