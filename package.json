@@ -1,0 +1,57 @@
+{
+  "name": "expo-haptics-advanced",
+  "version": "0.1.0",
+  "description": "Advanced haptics for Expo: continuous textures you change while they play, taps with intensity and sharpness, and haptic patterns. Core Haptics on iOS, amplitude-controlled vibration on Android.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "node internal/module_scripts/clean.js",
+    "lint": "eslint src/",
+    "open:ios": "node internal/module_scripts/open-ios.js",
+    "open:android": "node internal/module_scripts/open-android.js",
+    "prepublishOnly": "node internal/module_scripts/prepare.js"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "haptics",
+    "core-haptics",
+    "ahap",
+    "vibration",
+    "texture"
+  ],
+  "repository": "https://github.com/sethwebster/expo-haptics-advanced",
+  "bugs": {
+    "url": "https://github.com/sethwebster/expo-haptics-advanced/issues"
+  },
+  "author": "Seth Webster <sethwebster@gmail.com> (https://github.com/sethwebster)",
+  "license": "MIT",
+  "homepage": "https://github.com/sethwebster/expo-haptics-advanced#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@types/react": "~19.3.0",
+    "babel-preset-expo": "~58.0.22",
+    "eslint": "~9.39.4",
+    "eslint-config-universe": "^16.1.2",
+    "expo": "^58.0.21",
+    "prettier": "^3.0.0",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "typescript": "~6.0.3"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  },
+  "files": [
+    "build",
+    "src",
+    "ios",
+    "android/build.gradle",
+    "android/src/main",
+    "expo-module.config.json"
+  ]
+}

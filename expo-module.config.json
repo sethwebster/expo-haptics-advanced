@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["ExpoHapticsAdvancedModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.hapticsadvanced.ExpoHapticsAdvancedModule"]
+  }
+}
