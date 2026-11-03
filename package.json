@@ -1,6 +1,6 @@
 {
   "name": "expo-haptics-advanced",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Advanced haptics for Expo: continuous textures you change while they play, taps with intensity and sharpness, and haptic patterns. Core Haptics on iOS, amplitude-controlled vibration on Android.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -10,7 +10,8 @@
     "lint": "eslint src/",
     "open:ios": "node internal/module_scripts/open-ios.js",
     "open:android": "node internal/module_scripts/open-android.js",
-    "prepublishOnly": "node internal/module_scripts/prepare.js"
+    "prepublishOnly": "node internal/module_scripts/prepare.js",
+    "check:build": "tsc && git diff --exit-code build"
   },
   "keywords": [
     "react-native",
@@ -21,7 +22,10 @@
     "vibration",
     "texture"
   ],
-  "repository": "https://github.com/sethwebster/expo-haptics-advanced",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethwebster/expo-haptics-advanced.git"
+  },
   "bugs": {
     "url": "https://github.com/sethwebster/expo-haptics-advanced/issues"
   },
@@ -42,7 +46,7 @@
     "typescript": "~6.0.3"
   },
   "peerDependencies": {
-    "expo": "*",
+    "expo": ">=58.0.0",
     "react": "*",
     "react-native": "*"
   },
@@ -54,5 +58,6 @@
     "android/src/main",
     "expo-module.config.json",
     "CHANGELOG.md"
-  ]
+  ],
+  "sideEffects": false
 }

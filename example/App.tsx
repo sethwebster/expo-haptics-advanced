@@ -27,7 +27,7 @@ function SlidePicker() {
     PanResponder.create({
       onStartShouldSetPanResponder: () => true,
       onPanResponderGrant: (e) => {
-        void Haptics.prepare();
+        Haptics.prepare();
         Haptics.texture.start({ intensity: 0, sharpness: 0.85 });
         move(e.nativeEvent.pageX - left.current);
       },
@@ -93,11 +93,11 @@ export default function App() {
   return (
     <View style={styles.screen}>
       <Text style={styles.title}>expo-haptics-advanced</Text>
-      <Text style={styles.caption}>{Haptics.isSupported ? 'Haptics supported' : 'Haptics not supported on this device'}</Text>
+      <Text style={styles.caption}>{Haptics.isSupported() ? 'Haptics supported' : 'Haptics not supported on this device'}</Text>
       <SlidePicker />
       <Button label="Tap: light, crisp" onPress={() => Haptics.tap({ intensity: 0.4, sharpness: 1 })} />
       <Button label="Tap: heavy, dull" onPress={() => Haptics.tap({ intensity: 1, sharpness: 0 })} />
-      <Button label="Pattern: heartbeat" onPress={() => void Haptics.playPattern(heartbeat)} />
+      <Button label="Pattern: heartbeat" onPress={() => Haptics.playPattern(heartbeat)} />
       {error && <Text style={styles.error}>{error}</Text>}
     </View>
   );

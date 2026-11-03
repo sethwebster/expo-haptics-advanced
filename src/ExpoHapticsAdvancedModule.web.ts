@@ -7,12 +7,12 @@ class ExpoHapticsAdvancedModule extends NativeModule<ExpoHapticsAdvancedEvents> 
   isSupported() {
     return false;
   }
-  async prepareAsync() {}
+  prepare() {}
   tap() {}
   startTexture() {}
   setTexture() {}
   stopTexture() {}
-  async playPatternAsync() {}
+  playPattern() {}
   stop() {}
 }
 

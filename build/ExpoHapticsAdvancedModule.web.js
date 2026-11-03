@@ -4,12 +4,12 @@ class ExpoHapticsAdvancedModule extends NativeModule {
     isSupported() {
         return false;
     }
-    async prepareAsync() { }
+    prepare() { }
     tap() { }
     startTexture() { }
     setTexture() { }
     stopTexture() { }
-    async playPatternAsync() { }
+    playPattern() { }
     stop() { }
 }
 export default registerWebModule(ExpoHapticsAdvancedModule, 'ExpoHapticsAdvanced');

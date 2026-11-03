@@ -4,15 +4,12 @@ plugins {
 }
 
 group = 'expo.modules.hapticsadvanced'
-version = '0.1.0'
+version = '0.1.1'
 
 android {
   namespace "expo.modules.hapticsadvanced"
   defaultConfig {
-    versionCode 1
-    versionName "0.1.0"
-  }
-  lintOptions {
-    abortOnError false
+    versionCode 2
+    versionName "0.1.1"
   }
 }
